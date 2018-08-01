@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+    <base href="./">
+    <!--<base href="/droweb/">-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keyword" content="">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <!-- Add to home screen icon -->
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/data/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/data/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/data/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/data/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/data/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/data/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/data/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#010326">
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://cdn.ckeditor.com/4.5.11/full/ckeditor.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+
+    <title>Carematix - PRO Portal</title>
+</head>
+
+<!-- BODY options, add following classes to body to change options
+
+    // Header options
+    1. '.header-fixed'					- Fixed Header
+
+    // Brand options
+    1. '.brand-minimized'       - Minimized brand (Only symbol)
+
+    // Sidebar options
+    1. '.sidebar-fixed'					- Fixed Sidebar
+    2. '.sidebar-hidden'				- Hidden Sidebar
+    3. '.sidebar-off-canvas'		- Off Canvas Sidebar
+    4. '.sidebar-minimized'			- Minimized Sidebar (Only icons)
+    5. '.sidebar-compact'			  - Compact Sidebar
+
+    // Aside options
+    1. '.aside-menu-fixed'			- Fixed Aside Menu
+    2. '.aside-menu-hidden'			- Hidden Aside Menu
+    3. '.aside-menu-off-canvas'	- Off Canvas Aside Menu
+
+    // Breadcrumb options
+    1. '.breadcrumb-fixed'			- Fixed Breadcrumb
+
+    // Footer options
+    1. '.footer-fixed'					- Fixed footer
+
+    -->
+
+<body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
+    <!-- Enable bootstrap 4 theme -->
+    <script>window.__theme = 'bs4';</script>
+    <!-- App Loading... -->
+<script type="text/javascript" src="inline.bundle.js"></script><script type="text/javascript" src="polyfills.bundle.js"></script><script type="text/javascript" src="scripts.bundle.js"></script><script type="text/javascript" src="styles.bundle.js"></script><script type="text/javascript" src="vendor.bundle.js"></script><script type="text/javascript" src="main.bundle.js"></script></body>
+
+</html>
