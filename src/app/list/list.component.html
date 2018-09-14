@@ -1,0 +1,11 @@
+<div class="contacts">
+  <div class="list">
+    <div class="list-item-group">
+      <p *ngFor="let s of listData" (click)="select(s)">
+        <a>{{s?.name}}</a>
+        <span class="count-flag" *ngIf="s?.unreadCount > 0">{{s?.unreadCount}}</span>
+        <span class="typing" *ngIf="typing && userTyping == s?.username">(typing...)</span>
+      </p>
+    </div>
+  </div>
+</div>

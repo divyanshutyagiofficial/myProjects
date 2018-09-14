@@ -1,0 +1,57 @@
+<!--
+  <div class="login_form">
+    <form (submit)="logIn()">
+      <input type="text" placeholder="Enter your username." [(ngModel)]="username" [ngModelOptions]="{standalone: true}" />
+      <input type="password" placeholder="Enter your password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" />
+      <input type="submit" value="Login" />
+    </form>
+  </div>
+
+  <div class="signup_form">
+    <form (submit)="signUp()">
+      <input type="text" placeholder="Enter your Name." [(ngModel)]="name" />
+      <input type="text" placeholder="Enter your Contact number." [(ngModel)]="contact" [ngModelOptions]="{standalone: true}" />
+      <input type="text" placeholder="Enter your username." [(ngModel)]="username" [ngModelOptions]="{standalone: true}" />
+      <input type="password" placeholder="Enter your password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" />
+      <input type="submit" value="Sign up" />
+    </form>
+  </div>
+
+  <div class="image_attach">
+    <form enctype="multipart/form-data">
+      <input type="file" (change)="fileEvent($event)" />
+      <input type="button" value="Submit" (click)="submit()" />
+    </form>
+  </div>
+</div>
+-->
+
+<div id="cover" class="cover" [style.background-image]="'url(' + cover + ')'">
+  <img class="cover_image" src="{{cover}}" alt="cover" />
+  <div class="image_attach">
+    <form enctype="multipart/form-data">
+      <label class="filebutton">
+        <span>
+          <input type="file" (change)="fileEvent($event)" />
+          <i class="material-icons add-image">
+            add_photo_alternate
+          </i>
+        </span>
+      </label>
+      <i class="material-icons" (click)="submit()">
+        cloud_upload
+      </i>
+    </form>
+  </div>
+</div>
+
+<div class="content container">
+  <div class="no_content" style="text-align:center">
+    <h3>Whoops!!! :( </h3>
+    <p>No content at present... </p>
+  </div>
+</div>
+
+<div id="main" class="main container">
+
+</div>

@@ -1,0 +1,32 @@
+<div class="message_page" id="page">
+  <div class="chat_window" id="chat_window">
+    <div class="info">
+      <div class="row">
+        <div class="name">{{selected?.name}}</div>
+        <p class="typing" *ngIf="typing">(typing...)</p>
+      </div>
+    </div>
+    <div class="messages" id="messages">
+      <div *ngFor="let d of data | sortBy: '_id'">
+        <p class="capsule" [ngClass]="{'self': d?.sender == user, 'alien': d?.sender != user}">{{d?.message}}</p>
+      </div>
+      <div class="unread_message"></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="text-row">
+      <form (submit)="send()">
+        <input type="text" [(ngModel)]="text" class="text" placeholder="Type your message here !!!" (input)="setTyping()" (keyup) = "noTyping()"
+          [ngModelOptions]="{standalone: true}" />
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- images -->
+<div class="loader" *ngIf="!loading">
+  <img src="assets/img/loader.gif" alt="loading..." />
+</div>
+<div class="nodata" *ngIf="noData">
+  <img src="assets/img/no-chat.gif" alt="No data found !!!" />
+</div>

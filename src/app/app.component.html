@@ -1,0 +1,27 @@
+<div class="header">
+  <div class="row">
+    <div class="authorized_links" *ngIf="isAuthenticated()">
+      <div class="user_info">
+        <a>{{getUsername()}}</a>
+      </div>
+      <div class="back" *ngIf="isAuthenticated()">
+        <a [routerLink]="['/contacts']">Contacts</a>
+        <span class="pings" *ngIf="count > 0">{{count}}</span>
+      </div>
+      <div class="links">
+        <a [routerLink]="['/']">Dashboard</a>
+        <a [routerLink]="['/message']">Message</a>
+        <a (click)="logout()">Logout</a>
+      </div>
+    </div>
+    <div class="unauthorized_links" *ngIf="!isAuthenticated()">
+      <div class="links">
+        <a [routerLink]="['login']">Login</a>
+        <a [routerLink]="['signup']">Signup</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main">
+  <router-outlet></router-outlet>
+</div>

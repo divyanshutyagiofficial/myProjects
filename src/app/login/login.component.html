@@ -1,0 +1,9 @@
+<div class="login_page">
+  <form [formGroup]="loginForm" (submit)="login()">
+    <label>Username</label>
+    <input type="text" class="username" placeholder="Enter your username." formControlName="username" />
+    <label>Password</label>
+    <input type="text" class="password" placeholder="Enter your password." formControlName="password" />
+    <button type="submit" class="login">Log in</button>
+  </form>
+</div>

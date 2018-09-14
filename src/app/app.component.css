@@ -1,0 +1,63 @@
+.header{ background: #19001f;position: absolute; width: 100%; top: 0; }
+.header { height: 76px; opacity: 0.5; background-color: rgb(0, 0, 0); }
+.logo_section { width: 20%; float: left;}
+.unauthorized_links, .authorized_links {float: right !important; width: 100%; text-align: right;}
+.row { padding: 20px;}
+.links a { color: white; text-decoration: none; margin: 0 5px; cursor: pointer;}
+.user_info {
+    float: right;
+    color: white;
+    margin-left: 3%;
+}
+.logout{ cursor: pointer;}
+.back {
+    color: white;
+    float: left;
+    margin-top: -1.47px;
+}
+span.pings {
+    font-size: 18px;
+    position: absolute;
+    top: 16px;
+    left: 100px;
+    background: #0070ff;
+    padding: 2px 5px;
+    border-radius: 50px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 532px) { 
+ a { font-size: 16px ;}
+ span.pings {
+    font-size: 16px;
+    top: 20px;
+    left: 85px;
+  } 
+}
+
+@media only screen and (max-width: 446px) { a { font-size: 14px ;}
+  span.pings {
+    font-size: 13px;
+    top: 20px;
+    left: 75px;
+  }  
+}
+@media only screen and (max-width: 410px) { a { font-size: 12px ;}
+ span.pings {
+    font-size: 11px;
+    top: 24px;
+    left: 65px;
+  } 
+}
+@media only screen and (max-width: 364px) { a { font-size: 10px ;} 
+ span.pings {
+    font-size: 10px;
+    top: 24px;
+    left: 60px;
+  }  
+}

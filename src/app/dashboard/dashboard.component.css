@@ -1,0 +1,19 @@
+div#cover { height: 700px; text-align: center; background-size: 100% !important; margin-top: -75px;}
+.add-image { position: absolute; margin: 12% 0 0 0; }
+.cover_image { width: 100%; height: 100%; object-fit: cover;}
+.image_attach{ position: absolute; top: 75px; height: 550px; left: 0; width: 2%;  background: #00000033;}
+.material-icons{ color: white; cursor: pointer;}
+.image_attach .filebutton {
+    position: relative;
+}
+.image_attach .filebutton input[type="file"] {width: 21px; visibility: hidden;}
+.image_attach .filebutton .add-image {
+    left: 0;
+    top: -2px;
+    position: absolute;
+    margin: 0;
+    cursor: pointer;
+}
+.content{
+    min-height: 700px;
+}

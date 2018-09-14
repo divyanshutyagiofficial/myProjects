@@ -1,0 +1,23 @@
+<div class="signup_page">
+  <form [formGroup]="signupForm" (submit)="signUp()">
+    <div class="row">
+      <label>Name</label>
+      <input type="text" class="name" placeholder="Enter your name." formControlName="name" />
+    </div>
+    <div class="row">
+      <label>Contact</label>
+      <input type="text" class="contact" placeholder="Enter your contact." formControlName="contact" />
+    </div>
+    <div class="row">
+      <label>Username</label>
+      <input type="text" class="username" placeholder="Enter your username." formControlName="username" />
+    </div>
+    <div class="row">
+      <label>Password</label>
+      <input type="text" class="password" placeholder="Enter your password." formControlName="password" />
+    </div>
+    <div class="row-button">
+      <button type="submit">Sign up</button>
+    </div>
+  </form>
+</div>
