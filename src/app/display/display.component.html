@@ -1,0 +1,25 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Quantity (Pending)</th>
+      <th scope="col">Created-till-now</th>
+      <th scope="col">Predicted</th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let d of data; let i=index" [ngClass]="{'inactive': !d.quantity}">
+      <td scope="row">{{i+1}}</td>
+      <td>{{d.dishName}}</td>
+      <td>{{d.quantity}}</td>
+      <td>{{d.prepared}}</td>
+      <td>{{d.predicted}}</td>
+      <td>
+        <button mat-button (click)="done(i, d.dishId, d.quantity, d.prepared);">Done</button>
+      </td>
+    </tr>
+    <tr>
+  </tbody>
+</table>

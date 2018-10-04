@@ -1,0 +1,23 @@
+<div #report id="report">
+  <h3>Report</h3>
+  <table class="table">
+    <thead style="height: 20px">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Produced</th>
+        <th scope="col">Predicted</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let d of data; let i=index">
+        <td scope="row">{{i+1}}</td>
+        <td>{{d.dishName}}</td>
+        <td>{{d.prepared}}</td>
+        <td>{{d.predicted}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<button mat-button (click)="generateReport()">Download Report</button>

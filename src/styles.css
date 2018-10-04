@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.body {
+    font-family: 'Roboto Mono', monospace;
+}
+thead {
+    background: grey;
+    color: white;
+}
+tbody {
+    background: whitesmoke;
+}
+button.mat-button {
+    background: #fba400;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+td input[type="number"] {
+    width: 45px;
+    text-align: center;
+    height: 40px;
+    background: #ffffff;
+    border: 1px solid #dbdedb;
+    font-weight: 600;
+}
+td {
+    text-align: center
+}
+th {
+    text-align: center;
+}
+tr {
+    font-weight: 600;
+}
+mat-toolbar.mat-toolbar.mat-toolbar-single-row {
+    background: #fba400;
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+}

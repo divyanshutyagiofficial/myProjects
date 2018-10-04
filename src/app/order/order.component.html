@@ -1,0 +1,29 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Dish Id</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Predicted value</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let d of dishes; let i=index">
+      <th scope="row">{{i+1}}</th>
+      <td>{{d.dishName}}</td>
+      <td>{{d.dishId}}</td>
+      <td>
+        <input type="number" [value]="d.quantity" (change)="d.quantity = $event.target.valueAsNumber" min="0" />
+      </td>
+      <td>
+        <input type="number" [value]="d.predicted" (change)="d.predicted = $event.target.valueAsNumber" min="0" />
+      </td>
+      <td>
+        <button [disabled]="!d.quantity && !d.predicted" mat-button (click)="order(i, d);">Place Order</button>
+      </td>
+    </tr>
+    <tr>
+  </tbody>
+</table>
